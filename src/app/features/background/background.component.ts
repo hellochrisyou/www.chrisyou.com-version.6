@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { BaseAnimate } from 'src/app/animations/base-animate';
+import { RoutingStateService } from 'src/app/services/routing-state.service';
 declare var Swiper: any
 @Component({
   selector: 'app-background',
@@ -6,9 +8,9 @@ declare var Swiper: any
   styleUrls: ['./background.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class BackgroundComponent implements OnInit {
+export class BackgroundComponent extends BaseAnimate implements OnInit {
   timelineSwiper: any;
-  constructor() { }
+  constructor(protected override routingStateService: RoutingStateService) { super(routingStateService) }
 
   ngOnInit(): void {
     this.timelineSwiper = new Swiper(".timeline .swiper-container", {

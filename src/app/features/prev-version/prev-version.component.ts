@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseAnimate } from 'src/app/animations/base-animate';
+import { RoutingStateService } from 'src/app/services/routing-state.service';
 
 @Component({
   selector: 'app-prev-version',
   templateUrl: './prev-version.component.html',
   styleUrls: ['./prev-version.component.scss']
 })
-export class PrevVersionComponent implements OnInit {
+export class PrevVersionComponent extends BaseAnimate implements OnInit {
   currentIndex = 0;
-  constructor() { }
+  constructor(protected override routingStateService: RoutingStateService) { super(routingStateService) }
 
   ngOnInit(): void {
   }

@@ -2,18 +2,16 @@
   <span id="splash-overlay" class="splash"></span>
   <span id="welcome" class="z-depth-4"></span>
 
+
   <header class="navbar-fixed">
-    <nav class="row darken-3 stroke">
-      <div class="col s12">
-        <ul>
-          <li><a (click)="navigateHome()">Home</a></li>
-          <li><a (click)="navigateBackground()">Background</a></li>
-          <li><a (click)="navigateProject()">Projects</a></li>
-          <li><a (click)="navigatePrevVersion()">Versions</a>
-          </li>
-        </ul>
+    <mat-toolbar color="primary">
+      <div class="header-wrapper" fxLayout="row" fxLayoutAlign="space-around center">
+        <div (click)="navigateHome()">Home</div>
+        <div (click)="navigateBackground()">Background</div>
+        <div (click)="navigateProject()">Projects</div>
+        <div (click)="navigatePrevVersion()">Versions</div>
       </div>
-    </nav>
+    </mat-toolbar>
   </header>
   <main class="valign-wrapper">
     <span class="container grey-text text-lighten-1 ">

@@ -1,9 +1,10 @@
-<div class="container animate__animated animate__fadeIn">
+<div class="container animate__animated"
+  [ngClass]="{'animate__fadeOut': isFadeOut === true, ' animate__fadeIn': isFadeOut===false}">
   <div class="timeline">
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide slide-1" data-year="Present">
-          <div class="swiper-slide-content"><span class="timeline-year">Present</span>
+        <div class="swiper-slide slide-1" data-year="2021-Present">
+          <div class="swiper-slide-content"><span class="timeline-year">2021-Present</span>
             <h4 class="timeline-title">REI Systems</h4>
             <p class="timeline-text"><b class="sub-title">Full-Stack Software Engineer</b></p>
             <p class="timeline-text"> Femadex is a cloud-based enterprise data analytics system that

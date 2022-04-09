@@ -24,7 +24,9 @@ export class AppComponent implements OnInit {
   }
 
   public navigateHome(): void {
+    this.routingStateService.isFadeOut = true;
     setTimeout(() => {
+      this.routingStateService.isFadeOut = false;
       this.router.navigateByUrl('/home');
     }, 500);
   }
@@ -51,15 +53,6 @@ export class AppComponent implements OnInit {
     setTimeout(() => {
       this.routingStateService.isFadeOut = false;
       this.router.navigateByUrl('/previous-versions');
-    }, 500);
-  }
-
-
-  public toggleVisiblity(): void {
-    this.routingStateService.isFadeOut = true;
-    setTimeout(() => {
-      this.routingStateService.isFadeOut = false;
-      this.router.navigate(['/Shared/Confirmation-page']);
     }, 500);
   }
 }

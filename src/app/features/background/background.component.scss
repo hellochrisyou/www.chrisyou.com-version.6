@@ -136,6 +136,7 @@ body {
 
 .timeline .swiper-slide-active .timeline-text {
   opacity: 1;
+  font-size: 0.85rem;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-transition: .4s ease 1.8s;
@@ -310,7 +311,7 @@ body {
 }
 
 .sub-title {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: goldenrod;
 }
 

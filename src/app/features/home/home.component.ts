@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseAnimate } from 'src/app/animations/base-animate';
+import { RoutingStateService } from 'src/app/services/routing-state.service';
 declare var $: any;
 
 @Component({
@@ -6,8 +8,8 @@ declare var $: any;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
-  constructor() { }
+export class HomeComponent extends BaseAnimate implements OnInit {
+  constructor(protected override routingStateService: RoutingStateService) { super(routingStateService) }
   slideElements = ['.back__slide', '.card__slide', '.content__slide'];
   inProgress = false;
   ngOnInit() {

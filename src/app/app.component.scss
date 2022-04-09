@@ -5,14 +5,14 @@ span.container {
 }
 
 
-nav {
-  position: absolute;
-  left: 0px;
-  height: 6rem;
-  background-color: transparent;
-  width: 100%;
-  text-align: center;
-}
+// nav {
+//   position: absolute;
+//   left: 0px;
+//   height: 6rem;
+//   background-color: transparent;
+//   width: 100%;
+//   text-align: center;
+// }
 
 ul {
   margin: 0;
@@ -25,25 +25,24 @@ ul li a {
   color: white;
   font-size: 22px;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 15px 0;
   position: relative;
 }
 
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
+.header-wrapper div,
+.header-wrapper div:after,
+.header-wrapper div:before {
   transition: all .5s;
 }
 
 
 /* stroke */
-nav.stroke ul li a,
-nav.fill ul li a {
+.header-wrapper div {
   position: relative;
 }
 
-nav.stroke ul li a:after,
-nav.fill ul li a:after {
+.header-wrapper div:after,
+.header-wrapper div:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -56,51 +55,49 @@ nav.fill ul li a:after {
   height: 1px;
 }
 
-nav ul a:hover {
+.header-wrapper div:hover {
   background-color: transparent;
 }
 
-nav.stroke ul li a:hover:after {
+.header-wrapper div:hover:after {
   width: 100%;
 }
 
-nav.fill ul li a {
+.header-wrapper div {
   transition: all 2s;
 }
 
-nav.fill ul li a:after {
+.header-wrapper div:after {
   text-align: left;
-  content: '.';
+  content: '';
   margin: 0;
   opacity: 0;
 }
 
-nav.fill ul li a:hover {
-  z-index: 1;
+.header-wrapper div:hover {
+  z-index: 311;
+  cursor: pointer;
 }
 
-nav.fill ul li a:hover:after {
-  z-index: -10;
+.header-wrapper div:hover:after {
+  z-index: -1;
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;
   -moz-animation: fill 1s forwards;
-  opacity: 0
+  opacity: 1
 }
 
 .row {
-  background-color: #fed559;
+  background-color: #3F51B5;
 }
 
 li a {
   color: black !important;
+  font-weight: bolder;
 }
 
 main {
   width: 100vw;
-}
-
-nav ul {
-  margin-top: 1%;
 }
 
 .mat-tab-label-container .mat-tab-labels {
@@ -122,21 +119,21 @@ nav ul {
   margin-top: 2rem;
 }
 
-// Tab arrows
-:host ::ng-deep .mat-tab-header-pagination .mat-tab-header-pagination-chevron {
-  border-color: white;
-  height: 1rem;
-  width: 1rem;
-  z-index: 1500;
+.header-wrapper {
+  height: 100%;
+}
+
+.mat-toolbar-single-row {
+  display: block;
 }
 
 mat-toolbar {
-  min-width: 300vw;
   position: fixed;
+  top: 0;
+  width: 100vw;
   left: 0;
   box-shadow: none !important;
-
-  background-color: rgb(255, 214, 94);
+  background-color: #3F51B5;
   z-index: 300;
 }
 
@@ -235,7 +232,7 @@ span#toolbar-title {
   text-align: left;
 }
 
-.menu-expanded a {
+.header-wrapper div {
   transition: all 0.15s;
   text-decoration: none;
   font-size: 2em;
@@ -243,10 +240,10 @@ span#toolbar-title {
   padding: 5px;
 }
 
-.menu-expanded a:hover {
+.header-wrapper div:hover {
   transition: all 0.15s;
   letter-spacing: 2px;
-  color: #333;
+  color: goldenrod;
 }
 
 .menu-expanded .bar {
@@ -357,13 +354,13 @@ body.welcome {
 }
 
 .welcome #welcome {
-  background: #fed559;
+  background: #3F51B5;
   width: 56px;
   height: 56px;
   position: absolute;
   left: 50%;
   top: 50%;
-  z-index: 999;
+  z-index: 200;
   overflow: hidden;
   opacity: 0;
   transform: translate(-50%, -50%);
@@ -432,7 +429,7 @@ body.welcome {
 
 @keyframes moveUp {
   0% {
-    background: #fed559;
+    background: #3F51B5;
     top: 100%;
   }
 
@@ -442,22 +439,22 @@ body.welcome {
 
   100% {
     top: 50%;
-    background: #fed559;
+    background: #3F51B5;
   }
 }
 
 @keyframes materia {
   0% {
-    background: #fed559;
+    background: #3F51B5;
   }
 
   50% {
-    background: #fed559;
+    background: #3F51B5;
     top: 26px;
   }
 
   100% {
-    background: #fed559;
+    background: #3F51B5;
     width: 100%;
     height: 64px;
     border-radius: 0px;
@@ -560,9 +557,5 @@ body.welcome {
 
   ul li a {
     font-size: 0.56em;
-  }
-
-  nav {
-    height: 44px;
   }
 }
