@@ -1,0 +1,174 @@
+section#project-section {
+  background-image: url("../../../assets/img/bg/bg-project.jpg");
+  background-size: cover;
+  height: 95vh;
+  top: 0;
+}
+
+// Ribbon
+.ribbon {
+  background-color: #a00;
+  overflow: hidden;
+  white-space: nowrap;
+  /* top left corner */
+  position: absolute;
+  left: -50px;
+  top: 40px;
+  /* 45 deg ccw rotation */
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  /* shadow */
+  -webkit-box-shadow: 0 0 10px #888;
+  -moz-box-shadow: 0 0 10px #888;
+  box-shadow: 0 0 10px #888;
+  z-index: 3000;
+}
+
+a:hover {
+  color: goldenrod !important;
+}
+
+.ribbon a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 1px 0;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  /* shadow */
+  text-shadow: 0 0 5px #444;
+}
+
+// End Ribbon
+
+.mat-card-header {
+  justify-content: center;
+}
+
+.mat-card-subtitle {
+  justify-content: center;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Styles for the active tab label */
+#projectTabGroup .mat-tab-labels,
+#projectTabGroup .mat-tab-label.mat-tab-label-active,
+#projectTabGroup .mat-tab-group,
+#projectTabGroup .mat-tab-label,
+#projectTabGroup .mat-tab-header,
+#projectTabGroup .mat-tab-label-container,
+#projectTabGroup .mat-tab-list {
+  background-color: transparent !important;
+  color: black;
+}
+
+#projectTabGroup {
+  margin-top: 6rem;
+}
+
+.mat-card-header {
+  text-align: center;
+}
+
+.mat-card-header .mat-card-subtitle {
+  font-weight: 475;
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.mat-tab-body-content {
+  overflow: hidden !important;
+}
+
+.mat-tab-label.inner-tabs .mat-tab-label-content {
+  color: black;
+  font-weight: 800;
+}
+
+div.image-link,
+a {
+  color: blue;
+  text-align: center;
+  font-weight: 800;
+}
+
+a {
+  cursor: pointer;
+}
+
+#project-section h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+mat-card.project-card {
+  width: 40%;
+  height: auto;
+  margin-top: 10vh;
+}
+
+#img-s3fs {
+  width: 20vw;
+  margin: 0 auto;
+}
+
+.poster {
+  width: 50vw;
+}
+
+#projectTabGroup .hidden-tab-group .mat-tab-header {
+  display: none;
+}
+
+#projectTabGroup .hidden-tab-group {
+  min-width: 100%;
+}
+
+iframe#stackBlitzProject {
+  width: 75%;
+  min-height: 35vw;
+  margin-top: 4rem;
+}
+
+.toggle-text {
+  font-style: oblique;
+  color: black;
+  font-weight: 400;
+}
+
+
+@media only screen and (max-width: 719px) {
+  mat-tab-group {
+    margin-top: 4vw;
+  }
+
+  mat-tabs .mat-tab-label {
+    width: 60px !important;
+  }
+
+  mat-card.project-card {
+    width: 90%;
+    height: 70%;
+    max-width: 550px;
+    margin: 2vw auto;
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  mat-card {
+    min-width: 675px;
+  }
+}

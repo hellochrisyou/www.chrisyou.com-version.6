@@ -1,0 +1,25 @@
+<body class="welcome">
+  <span id="splash-overlay" class="splash"></span>
+  <span id="welcome" class="z-depth-4"></span>
+
+  <header class="navbar-fixed">
+    <nav class="row darken-3 stroke">
+      <div class="col s12">
+        <ul>
+          <li><a (click)="navigateHome()">Home</a></li>
+          <li><a (click)="navigateBackground()">Background</a></li>
+          <li><a (click)="navigateProject()">Projects</a></li>
+          <li><a (click)="navigatePrevVersion()">Versions</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="valign-wrapper">
+    <span class="container grey-text text-lighten-1 ">
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+    </span>
+  </main>
+</body>

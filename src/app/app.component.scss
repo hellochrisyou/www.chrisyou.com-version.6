@@ -1,0 +1,568 @@
+span.container {
+  min-width: 100vw;
+  top: 0;
+  height: 100%;
+}
+
+
+nav {
+  position: absolute;
+  left: 0px;
+  height: 6rem;
+  background-color: transparent;
+  width: 100%;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+nav ul a:hover {
+  background-color: transparent;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+nav.fill ul li a:hover {
+  z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 0
+}
+
+.row {
+  background-color: #fed559;
+}
+
+li a {
+  color: black !important;
+}
+
+main {
+  width: 100vw;
+}
+
+nav ul {
+  margin-top: 1%;
+}
+
+.mat-tab-label-container .mat-tab-labels {
+  background-color: transparent;
+  min-height: 5vh;
+  border: 0;
+}
+
+::ng-deep .mat-tab-label {
+  color: white;
+}
+
+.tab-icon {
+  margin-right: 0.4rem;
+}
+
+:host ::ng-deep .mat-tab-body-wrapper .mat-tab-body {
+  background-color: transparent;
+  margin-top: 2rem;
+}
+
+// Tab arrows
+:host ::ng-deep .mat-tab-header-pagination .mat-tab-header-pagination-chevron {
+  border-color: white;
+  height: 1rem;
+  width: 1rem;
+  z-index: 1500;
+}
+
+mat-toolbar {
+  min-width: 300vw;
+  position: fixed;
+  left: 0;
+  box-shadow: none !important;
+
+  background-color: rgb(255, 214, 94);
+  z-index: 300;
+}
+
+#left-spacer {
+  float: left;
+}
+
+#mid-spacer {
+  margin: 0 auto;
+  padding-left: 3.5vw;
+}
+
+#right-spacer {
+  float: right;
+  margin-right: 1vw;
+}
+
+.b-a,
+.bar,
+.bar:before,
+.bar:after {
+  transition: all 0.25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: black;
+}
+
+.menu-collapsed {
+  transition: all 0.25s;
+  position: fixed;
+  top: 10px;
+  left: 9px;
+  height: 36px;
+  width: 36px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.menu-collapsed ul {
+  transition: all 0;
+  position: fixed;
+  left: -9000px;
+}
+
+.bar {
+  position: fixed;
+  left: 12px;
+  top: 24px;
+}
+
+span#toolbar-title {
+  margin-left: 25vw;
+  font-family: "Dancing Script", cursive;
+}
+
+.bar:before {
+  top: -8px;
+}
+
+.bar:after {
+  top: 8px;
+}
+
+.b-a-expanded,
+.menu-expanded .bar:before,
+.menu-expanded .bar:after {
+  transition: all 0.25s;
+  top: 0;
+}
+
+.menu-expanded {
+  transition: all 0.25s;
+  text-align: center;
+  line-height: 45px;
+  padding-top: 40px;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.menu-expanded ul {
+  transition: all 0;
+  position: relative;
+  left: 0;
+  z-index: 500;
+}
+
+.menu-expanded li {
+  text-align: left;
+}
+
+.menu-expanded a {
+  transition: all 0.15s;
+  text-decoration: none;
+  font-size: 2em;
+  display: block;
+  padding: 5px;
+}
+
+.menu-expanded a:hover {
+  transition: all 0.15s;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+.menu-expanded .bar {
+  background-color: transparent;
+  transition: all 0.25s;
+}
+
+.menu-expanded .bar:before {
+  transform: rotate(45deg);
+}
+
+.menu-expanded .bar:after {
+  transform: rotate(-45deg);
+}
+
+a {
+  cursor: pointer;
+}
+
+#logout {
+  cursor: pointer;
+}
+
+.mat-tab-header {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.mat-tab-label {
+  min-width: 15px !important;
+}
+
+.mat-tab-label .mat-tab-label-content {
+  font-size: 0.7rem !important;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 599px) {
+  .mat-tab-list .mat-ink-bar {
+    height: 0.95vw;
+  }
+
+  :host ::ng-deep .mat-tab-label {
+    font-size: 0.6rem;
+    max-width: 22vw;
+    min-width: initial;
+  }
+
+  body {
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    overflow: auto !important;
+  }
+
+  main {
+    margin-top: 3vh;
+    width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 250;
+    overflow: auto;
+  }
+}
+
+//Splash Screen
+
+main {
+  flex: 1 0 auto;
+  height: 100%;
+  margin-top: -2rem;
+}
+
+h1.title,
+.footer-copyright a {
+  font-family: 'Architects Daughter', cursive;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* start welcome animation */
+
+body.welcome {
+  background: transparent;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.welcome .splash {
+  height: 0px;
+  padding: 0px;
+  border: 130em solid white;
+  position: fixed;
+  background-color: transparent;
+  left: 50%;
+  top: 100%;
+  display: block;
+  box-sizing: initial;
+  overflow: hidden;
+
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+}
+
+.welcome #welcome {
+  background: #fed559;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
+}
+
+/* moveIn */
+.welcome header,
+.welcome a.btn {
+  opacity: 0;
+  animation: moveIn 2s 3.1s ease forwards;
+}
+
+@keyframes init {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+
+  100% {
+    width: 56px;
+    height: 56px;
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes puff {
+  0% {
+    top: 100%;
+    height: 0px;
+    padding: 0px;
+  }
+
+  100% {
+    top: 50%;
+    height: 100%;
+    padding: 0px 100%;
+  }
+}
+
+@keyframes borderRadius {
+  0% {
+    border-radius: 50%;
+  }
+
+  100% {
+    border-radius: 0px;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    top: 50%;
+  }
+
+  50% {
+    top: 40%;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    background: #fed559;
+    top: 100%;
+  }
+
+  50% {
+    top: 40%;
+  }
+
+  100% {
+    top: 50%;
+    background: #fed559;
+  }
+}
+
+@keyframes materia {
+  0% {
+    background: #fed559;
+  }
+
+  50% {
+    background: #fed559;
+    top: 26px;
+  }
+
+  100% {
+    background: #fed559;
+    width: 100%;
+    height: 64px;
+    border-radius: 0px;
+    top: 26px;
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+//End Splash Screen
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  :host ::ng-deep .mat-tab-list .mat-ink-bar {
+    height: 0.4vw;
+  }
+
+  :host ::ng-deep .mat-tab-label {
+    font-size: 0.75rem;
+    max-width: 20vw;
+    min-width: initial;
+  }
+
+  :host ::ng-deep .mat-tab-header {
+    min-height: 9.5vw;
+    height: 9.5vw;
+  }
+
+  :host ::ng-deep .mat-tab-list .mat-ink-bar {
+    margin-bottom: 1.5vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  :host ::ng-deep .mat-tab-list .mat-ink-bar {
+    height: 0.3vw;
+    margin-bottom: 0.5vw;
+  }
+
+  :host ::ng-deep .mat-tab-label {
+    font-size: 0.85rem;
+    min-width: initial;
+    max-width: 15vw;
+  }
+
+  :host ::ng-deep .mat-tab-header {
+    height: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  :host ::ng-deep .mat-tab-list .mat-ink-bar {
+    margin-bottom: 0.5vw;
+  }
+
+  :host ::ng-deep .mat-tab-label {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  :host ::ng-deep .mat-tab-label {
+    // font-size: 0.85rem;
+    min-width: 11.25vw;
+    max-width: 11.25vw;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  :host ::ng-deep .mat-tab-list .mat-ink-bar {
+    margin-bottom: 1vw;
+  }
+
+  :host ::ng-deep .mat-tab-label {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    min-height: initial;
+  }
+
+  ul li a {
+    font-size: 0.56em;
+  }
+
+  nav {
+    height: 44px;
+  }
+}

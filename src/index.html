@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Www.Chrisyou.ComVersion6</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136344942-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136344942-1');
+  </script>
+</head>
+<style>
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, black 0%, #222 50%, black 100%);
+    width: 100%;
+    height: 100%;
+    display: table;
+  }
+
+  .loader {
+    color: white;
+    font-family: Ubuntu Mono, sans-serif;
+    font-weight: bold;
+    animation-duration: 4s;
+    animation-name: spread;
+    animation-iteration-count: infinite;
+    transform: translatez(0, 0, 0);
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.3em;
+    letter-spacing: 6em;
+    text-indent: -100%;
+  }
+
+  @keyframes spread {
+    from {
+      letter-spacing: 6em;
+      text-indent: -150%;
+    }
+
+    5% {}
+
+    50% {
+      text-indent: 50%;
+      letter-spacing: 0.3em;
+    }
+
+    95% {}
+
+    to {
+      letter-spacing: 6em;
+      text-indent: 120%;
+    }
+  }
+</style>
+
+<body>
+  <app-root>
+    <div class="background">
+      <p class="loader">Loading</p>
+    </div>
+  </app-root>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+</body>
+
+</html>

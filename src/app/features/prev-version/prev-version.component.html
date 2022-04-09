@@ -1,0 +1,120 @@
+<mat-tab-group id="version-tabs" class="hidden-tab-group" mat-align-tabs="center" [selectedIndex]="setVersionIndex()">
+  <mat-tab class="hidden-tabs" label="version-1">
+    <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+      <img class="mat-elevation-z6" src="https://storage.googleapis.com/static-images-703/chris_you_website_v1.gif" />
+      <!-- <div class="wrapper">
+        <input type="checkbox">
+        <div class="video">
+          <video src="https://storage.googleapis.com/static-images-703/chris_you_website_v1.mp4" loop muted autoplay
+            playsinline></video>
+        </div>
+        <div class="text">
+          <span data-text="Watch the video"></span>
+        </div>
+      </div> -->
+    </div>
+  </mat-tab>
+  <mat-tab class="hidden-tabs" label="version-2">
+    <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+      <img class="mat-elevation-z6" src="https://storage.googleapis.com/static-images-703/chris_you_website_v2.gif" />
+      <!-- <div class="wrapper">
+        <input type="checkbox">
+        <div class="video">
+          <video src="https://storage.googleapis.com/static-images-703/chris_you_website_v2.mp4" loop muted autoplay
+            playsinline></video>
+        </div>
+        <div class="text">
+          <span data-text="Watch the video"></span>
+        </div>
+      </div> -->
+    </div>
+  </mat-tab>
+  <mat-tab class="hidden-tabs" label="version-3">
+    <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+      <img class="mat-elevation-z6" src="https://storage.googleapis.com/static-images-703/chris_you_website_v3.gif" />
+      <!-- <div class="wrapper">
+        <input type="checkbox">
+        <div class="video">
+          <video src="https://storage.googleapis.com/static-images-703/chris_you_website_v3.mp4" loop muted autoplay
+            playsinline></video>
+        </div>
+        <div class="text">
+          <span data-text="Watch the video"></span>
+        </div>
+      </div> -->
+    </div>
+  </mat-tab>
+  <mat-tab class="hidden-tabs" label="version-4">
+    <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+      <img class="mat-elevation-z6" src="https://storage.googleapis.com/static-images-703/chris_you_website_v4.gif" />
+      <!-- <div class="wrapper">
+        <input type="checkbox">
+        <div class="video">
+          <video src="https://storage.googleapis.com/static-images-703/chris_you_website_v4.mp4" loop muted autoplay
+            playsinline></video>
+        </div>
+        <div class="text">
+          <span data-text="Watch the video"></span>
+        </div>
+      </div> -->
+    </div>
+  </mat-tab>
+  <mat-tab class="hidden-tabs" label="version-5">
+    <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+      <img class="mat-elevation-z6" src="https://storage.googleapis.com/static-images-703/chris_you_website_v5.gif" />
+      <!-- <div class="wrapper">
+        <input type="checkbox">
+        <div class="video">
+          <video src="https://storage.googleapis.com/static-images-703/chris_you_website_v5.mp4" loop muted autoplay
+            playsinline></video>
+        </div>
+        <div class="text">
+          <span data-text="Watch the video"></span>
+        </div>
+      </div> -->
+    </div>
+  </mat-tab>
+</mat-tab-group>
+<section fxLayout="row" fxLayoutAlign="center center">
+  <div fxFlex class="button-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <a role="button" (click)="setIndex(0)">
+      <span [ngClass]="{'anim': currentIndex===0}"></span>
+      <span [ngClass]="{'anim': currentIndex===0}"></span>
+      <span [ngClass]="{'anim': currentIndex===0}"></span>
+      <span [ngClass]="{'anim': currentIndex===0}"></span>
+      Version 1
+    </a>
+
+    <a role="button" (click)="setIndex(1)">
+      <span [ngClass]="{'anim': currentIndex===1}"></span>
+      <span [ngClass]="{'anim': currentIndex===1}"></span>
+      <span [ngClass]="{'anim': currentIndex===1}"></span>
+      <span [ngClass]="{'anim': currentIndex===1}"></span>
+      Version 2
+    </a>
+
+    <a role="button" (click)="setIndex(2)">
+      <span [ngClass]="{'anim': currentIndex===2}"></span>
+      <span [ngClass]="{'anim': currentIndex===2}"></span>
+      <span [ngClass]="{'anim': currentIndex===2}"></span>
+      <span [ngClass]="{'anim': currentIndex===2}"></span>
+      Version 3
+    </a>
+
+    <a role="button" (click)="setIndex(3)">
+      <span [ngClass]="{'anim': currentIndex===3}"></span>
+      <span [ngClass]="{'anim': currentIndex===3}"></span>
+      <span [ngClass]="{'anim': currentIndex===3}"></span>
+      <span [ngClass]="{'anim': currentIndex===3}"></span>
+      Version 4
+    </a>
+
+    <a role="button" (click)="setIndex(4)">
+      <span [ngClass]="{'anim': currentIndex===4}"></span>
+      <span [ngClass]="{'anim': currentIndex===4}"></span>
+      <span [ngClass]="{'anim': currentIndex===4}"></span>
+      <span [ngClass]="{'anim': currentIndex===4}"></span>
+      Version 5
+    </a>
+  </div>
+</section>
