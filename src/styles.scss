@@ -140,15 +140,6 @@ section {
   width: var(--logo-length);
 }
 
-hr {
-  height: var(--horizontal-line-height);
-  color: var(--yellow-color);
-  border-color: transparent;
-
-  margin: 1.5vw 0;
-  display: none;
-}
-
 .shared-title {
   font-family: "Anton", sans-serif;
   font-size: var(--title-size);
@@ -221,8 +212,8 @@ h1 {
 
 .mat-tab-group.mat-primary .mat-ink-bar,
 .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-  background-color: #fed55b;
-  height: 4px;
+  background-color: #3F51B5;
+  height: 3px;
   margin-bottom: 1vh;
 }
 
@@ -240,6 +231,9 @@ h2.version-title {
   justify-content: center;
 }
 
+#version-tabs .mat-tab-header {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
   .mat-dialog-container {

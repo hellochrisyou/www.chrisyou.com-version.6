@@ -78,7 +78,7 @@
   </mat-tab>
 </mat-tab-group>
 <section fxLayout="row" fxLayoutAlign="center center">
-  <div fxFlex class="button-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <div fxFlex class="button-wrapper" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
     <a role="button" (click)="setIndex(0)">
       <span [ngClass]="{'anim': currentIndex===0}"></span>
       <span [ngClass]="{'anim': currentIndex===0}"></span>

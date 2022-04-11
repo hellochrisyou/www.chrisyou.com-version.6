@@ -245,7 +245,7 @@ body {
   }
 
   .timeline .swiper-slide-content {
-    right: 30%;
+    right: 35%;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -306,9 +306,16 @@ body {
   }
 
   .timeline .swiper-slide-content {
-    right: 25%;
+    right: 31%;
   }
 }
+
+@media screen and (max-width: 599px) {
+  .timeline {
+    margin-top: 3rem;
+  }
+}
+
 
 .sub-title {
   font-size: 1.3rem;

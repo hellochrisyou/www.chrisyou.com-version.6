@@ -132,3 +132,52 @@ iframe#stackBlitzProject {
     min-width: 675px;
   }
 }
+
+@media only screen and (max-width: 599px) {
+  .mat-tab-label .mat-tab-label-content {
+    font-size: 0.75rem;
+  }
+
+  #projectTabGroup {
+    margin-top: 3rem;
+  }
+
+  iframe#stackBlitzProject {
+    width: 85%;
+    min-height: 57vh;
+    margin-top: 1rem;
+  }
+
+  .poster {
+    width: 95vw;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  iframe#stackBlitzProject {
+    width: 90%;
+    min-height: 65vh;
+  }
+
+  .poster {
+    width: 95vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  iframe#stackBlitzProject {
+    width: 90%;
+    min-height: 50vh;
+    margin-top: 1rem;
+  }
+
+  .poster {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .poster {
+    width: 45vw;
+  }
+}

@@ -1023,6 +1023,21 @@ section {
   }
 }
 
+
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 1279px) {
+  .back__slide:nth-child(1):before {
+    // background-size: contain;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .card__slide:nth-child(1) .image {
     width: 20vh;
@@ -1034,14 +1049,17 @@ section {
     width: 100vw;
   }
 
-  p.desc {
-    font-size: 0.75rem;
+  .sub-title {
+    font-size: 1rem;
   }
-}
 
-@media only screen and (min-width: 993px) {
-  .container {
-    width: 100%;
+  p.desc {
+    font-size: 0.675rem;
+    margin-top: 3rem;
+  }
+
+  .back__slide:nth-child(1):before {
+    background-size: cover;
   }
 }
 
