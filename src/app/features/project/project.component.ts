@@ -51,7 +51,7 @@ export class ProjectComponent extends BaseAnimate implements OnInit {
     if (this.isToggleCapitalOne === false) {
       return "Click to see Project Details";
     } else {
-      return "Click to see Infrastructure Diagram";
+      return "Click to see code with Stackblitz.com (embedded)";
     }
   }
 

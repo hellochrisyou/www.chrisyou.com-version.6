@@ -316,36 +316,40 @@ body {
   }
 }
 
+@media screen and (min-width: 1000px) and (min-height: 1400px) {
+  .timeline .swiper-slide {
+    width: 69vw;
+  }
 
-.sub-title {
-  font-size: 1.3rem;
-  color: goldenrod;
-}
+  .sub-title {
+    font-size: 1.3rem;
+    color: goldenrod;
+  }
 
-.slide-1 {
-  background-image: url("../../../assets//img/background/background-rei.jpg")
-}
+  .slide-1 {
+    background-image: url("../../../assets//img/background/background-rei.jpg")
+  }
 
-.slide-2 {
-  background-image: url("../../../assets/img/background/background-capital1.png")
-}
+  .slide-2 {
+    background-image: url("../../../assets/img/background/background-capital1.png")
+  }
 
-.slide-3 {
-  background-image: url("../../../assets/img/background/background-base2.png")
-}
+  .slide-3 {
+    background-image: url("../../../assets/img/background/background-base2.png")
+  }
 
-.slide-4 {
-  background-image: url("../../../assets/img/background/background-ains.png")
-}
+  .slide-4 {
+    background-image: url("../../../assets/img/background/background-ains.png")
+  }
 
-.slide-5 {
-  background-image: url("../../../assets/img/background/background-wayne-2.png")
-}
+  .slide-5 {
+    background-image: url("../../../assets/img/background/background-wayne-2.png")
+  }
 
-.slide-6 {
-  background-image: url("../../../assets/img/background/background-mannes.jpg")
-}
+  .slide-6 {
+    background-image: url("../../../assets/img/background/background-mannes.jpg")
+  }
 
-.slide-7 {
-  background-image: url("../../../assets/img/background/background-cim.jpg")
-}
+  .slide-7 {
+    background-image: url("../../../assets/img/background/background-cim.jpg")
+  }
