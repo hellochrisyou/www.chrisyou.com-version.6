@@ -13,6 +13,8 @@ export class BackgroundComponent extends BaseAnimate implements OnInit {
   constructor(protected override routingStateService: RoutingStateService) { super(routingStateService) }
 
   ngOnInit(): void {
+    console.log("🚀 ~ this.timelineSwiper", this.timelineSwiper)
+
     this.timelineSwiper = new Swiper(".timeline .swiper-container", {
       direction: "vertical",
       loop: false,
